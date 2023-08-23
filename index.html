@@ -7,12 +7,50 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="popup-container _hidden">
+        <form class="popup-content">
+          <button class="popup-close" type="button"><span>&times;</span></button>
+          <h2 class="header-popup">Ваш фидбек</h2>
+          <div class="frequency-area">
+            <label for="selection-area" class="question">Как часто вы заходите на сайт?</label>
+            <select class="choose-option">
+              <option class="option">Почти каждый день</option>
+              <option class="option">раз в неделю</option>
+              <option class="option">пару раз в неделю</option>
+              <option class="option">раз в месяц</option>
+              <option class="option">несколько раз в месяц</option>
+              <option class="option">я тут в первый раз</option>
+            </select>
+          </div>
+          <div class="email-area">
+            <label for="" class="question">Вы подписаны на e-mail рассылку?</label>
+            <label class="choose">
+              <input type="radio" name="gender" class="radio-check radio-1" checked>
+              <span class=radio-text>Да</span>
+            </label>
+            <label class="choose">
+              <input type="radio" name="gender" class="radio-check radio-2">
+              <span class=radio-text>Нет</span>
+            </label>
+          </div>
+          <div class="preferences">
+            <label for="" class="question">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
+            <textarea class="text-area">Может, больше рецептов?</textarea>
+          </div>
+          <button class="popup-button">отправить</button>
+        </form>
+      
+    </div>
     <header class="header">
         <div class="header-container">
           <div class="header-navigation">
             <a href="#0" class="header-logo">
-              <img src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" alt="Логотип сайта" class="header-logo">
+              <img src="SVG/noemi-logo.svg" alt="Логотип сайта" class="header-logo">
             </a>
+            <svg version="1.1" fill="#fff" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="burger">
+                <title>Menu</title>
+                <path d="M5.333 22.667h21.333v-2.667h-21.333v2.667zM5.333 17.333h21.333v-2.667h-21.333v2.667zM5.333 9.333v2.667h21.333v-2.667h-21.333z"></path>
+              </svg>
             <nav class="navigation-menu">
               <ul class="menu-list">
                 <li class="menu-list-item">
@@ -39,10 +77,72 @@
           <h1 class="header-title">Блог о творчестве, спорте,<br> и образе жизни</h1>
         </div>
       </header>
-      <div class="main">
+      <article class="article-trends">
+        <h2 class="article-trends-title">Сейчас в тренде</h2>
+        <div class="trend-cards">
+            <div class="trend-container trend-post-1">
+                <div class="trend-info">
+                    <ul class="trend-list">
+                        <li class="trend-list-item">
+                            <a href="#0" class="trend-list-item-link">Lifestyle</a>
+                        </li>
+                        <li class="trend-list-item">
+                            <a href="#0" class="trend-list-item-link">Interior</a>
+                        </li>
+                    </ul>
+                    <a href="#0" class="trend-list-item-link">
+                        <h3 class="trend-title">Сейчас в тренде: сад на подоконнике</h3>
+                    </a>    
+                </div>
+            </div>
+            <div class="trend-container trend-post-2">
+                <div class="trend-info">
+                   <ul class="trend-list">
+                    <li class="trend-list-item">
+                        <a href="#0" class="trend-list-item-link">Food</a>
+                     </li>
+                   </ul>
+                   <a href="#0" class="trend-list-item-link">
+                       <h3 class="trend-title">Cыры на красивых  картинках из интернета: какие они на вкус?</h3>
+                   </a>    
+                </div>   
+            </div>
+            <div class="trend-container trend-post-3">
+                <div class="trend-info">
+                   <ul class="trend-list">
+                    <li class="trend-list-item">
+                        <a href="#0" class="trend-list-item-link">Lifestyle</a>
+                    </li>
+                    <li class="trend-list-item">
+                        <a href="#0" class="trend-list-item-link">Travel</a>
+                    </li>
+                   </ul>
+                   <a href="#0" class="trend-list-item-link">
+                       <h3 class="trend-title">Собираемся в первый поход в горы</h3>
+                   </a>    
+               </div>
+            </div>
+            <div class="trend-container trend-post-4">
+                <div class="trend-info">
+                   <ul class="trend-list">
+                       <li class="trend-list-item">
+                          <a href="#0" class="trend-list-item-link">Food</a>
+                       </li>
+                       <li class="trend-list-item">
+                          <a href="#0" class="trend-list-item-link">Health</a>
+                      </li>
+                   </ul>
+                   <a href="#0" class="trend-list-item-link">
+                       <h3 class="trend-title">Сейчас в тренде: сколько витамина в лимонах?</h3>
+                   </a>    
+                </div>   
+            </div>
+        </div>
+      </article>
+      <div class="content">  
         <main class="posts-list">
           <article class="article">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg" alt="На рассвете" class="post-image">
+            <img src="images/last-post1.jpg" alt="На рассвете" class="post-image">
             <div class="post-info">
               <header class="post-header">
                 <ul class="post-list">
@@ -68,7 +168,7 @@
             </div>
           </article>
           <article class="article">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post2.jpg" alt="Йога" class="post-image">
+            <img src="images/last-post2.jpg" alt="Йога" class="post-image">
             <div class="post-info">
               <header class="post-header">
                 <ul class="post-list">
@@ -94,7 +194,7 @@
             </div>
           </article>
           <article class="article">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post3.jpg" alt="музыкальный фестиваль" class="post-image">
+            <img src="images/last-post3.jpg" alt="музыкальный фестиваль" class="post-image">
             <div class="post-info">
               <header class="post-header">
                 <ul class="post-list">
@@ -118,7 +218,7 @@
             </div>
           </article>
           <article class="article">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg" alt="Вариант сервировки" class="post-image">
+            <img src="images/last-post4.jpg" alt="Вариант сервировки" class="post-image">
             <div class="post-info">
               <header class="post-header">
                 <ul class="post-list">
@@ -144,7 +244,7 @@
             </div>
           </article>
           <article class="article">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post5.jpg" alt="Принт на подушках" class="post-image">
+            <img src="images/last-post5.jpg" alt="Принт на подушках" class="post-image">
             <div class="post-info">
               <header class="post-header">
                 <ul class="post-list">
@@ -172,65 +272,12 @@
               </div>
             </div>
           </article>
-          <article class="article">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post6.jpg" alt="Горы" class="post-image">
-            <div class="post-info">
-              <header class="post-header">
-                <ul class="post-list">
-                  <li class="post-list-item">
-                    <a href="#0" class="post-list-link">Travel</a>
-                  </li>
-                  <li class="post-list-item">
-                    <a href="#0" class="post-list-link">Lifestyle</a>
-                  </li>
-                </ul>
-                <h2 class="post-title">
-                  <a href="#0" class="post-title-link">Как первый раз отправиться в горы?</a>
-                </h2>
-                <div class="date-author">
-                  <time class="post-date" datetime="2019-06-10">10 июня 2019</time>
-                  <span class="post-author">Неизвестный автор</span>
-                </div>
-              </header>
-              <div class="post-text">
-                <p>Для начала нужно определиться в каком формате пройдет ваше путешествие. Это зависит от многих факторов, не только от ваших желаний и интересов.
-                </p>
-              </div>
-            </div>
-          </article>
-          <article class="article">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg" alt="Вариант сервировки" class="post-image">
-            <div class="post-info">
-              <header class="post-header">
-                <ul class="post-list">
-                  <li class="post-list-item">
-                    <a href="#0" class="post-list-link">Lifestyle</a>
-                  </li>
-                  <li class="post-list-item">
-                    <a href="#0" class="post-list-link">Food</a>
-                  </li>
-                </ul>
-                <h2 class="post-title">
-                  <a href="#0" class="post-title-link">Наукоёмкий подход к кулинарии</a>
-                </h2>
-                <div class="date-author">
-                  <time class="post-date" datetime="2019-06-10">10 июня 2019</time>
-                  <span class="post-author">Неизвестный автор</span>
-                </div>
-              </header>
-              <div class="post-text">
-                <p>
-                  Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.
-                </p>
-              </div>
-            </div>
-          </article>
         </main>
         <aside class="sidebar">
           <section class="section">
             <h3 class=" sidebar-section-title latest-posts-title">Новые посты</h3>
             <article class="article-latest-posts">
-              <img src="https://netology-code.github.io/html-2-diploma/sources/images/2.jpg" alt="На рассвете" class="latest-posts-image">
+              <img src="images/151.jpg" alt="На рассвете" class="latest-posts-image">
               <header class="latest-posts-header">
                 <div class="latest-posts-date">
                   <time class="latest-posts-date" datetime="2019-06-10">14 июня 2019</time>
@@ -242,7 +289,7 @@
               </header>
             </article>
             <article class="article-latest-posts">
-              <img src="https://netology-code.github.io/html-2-diploma/sources/images/151.jpg" alt="йога" class="latest-posts-image">
+              <img src="images/2.jpg" alt="йога" class="latest-posts-image">
               <header class="latest-posts-header">
                 <div class="latest-posts-date">
                   <time class="latest-posts-date" datetime="2019-06-10">14 июня 2019</time>
@@ -254,7 +301,7 @@
               </header>
             </article>
             <article class="article-latest-posts">
-              <img src="https://netology-code.github.io/html-2-diploma/sources/images/45.jpg" alt="Дизайн" class="latest-posts-image">
+              <img src="images/45.jpg" alt="Дизайн" class="latest-posts-image">
               <header class="latest-posts-header">
                 <div class="latest-posts-date">
                   <time class="latest-posts-date" datetime="2019-06-10">14 июня 2019</time>
@@ -266,7 +313,7 @@
               </header>
             </article>
             <article class="article-latest-posts">
-              <img src="https://netology-code.github.io/html-2-diploma/sources/images/501.jpg" alt="Кулинария" class="latest-posts-image">
+              <img src="images/501.jpg" alt="Кулинария" class="latest-posts-image">
               <header class="latest-posts-header">
                 <div class="latest-posts-date">
                   <time class="latest-posts-date" datetime="2019-06-10">14 июня 2019</time>
@@ -278,7 +325,7 @@
               </header>
             </article>
             <article class="article-latest-posts">
-              <img src="https://netology-code.github.io/html-2-diploma/sources/images/7.jpg" alt="длинные волосы" class="latest-posts-image">
+              <img src="images/7.jpg" alt="длинные волосы" class="latest-posts-image">
               <header class="latest-posts-header">
                 <div class="latest-posts-date">
                   <time class="latest-posts-date" datetime="2019-06-10">14 июня 2019</time>
@@ -380,6 +427,59 @@
           </section>
         </aside>
       </div>
+      <article class="shop">
+        <h2 class="shop-title">Наши изделия</h2>
+        <div class="product-cards">
+            <div class="product-container">
+                <img src="images/shop-item-desk1.jpg" alt="подушки на диване" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Подушки на диван</h3> 
+                    <div class="product-description">Набор издвух подушек с модными принтами. Видео о создании
+                        <a href="#0" class="product-link">здесь</a>.
+                    </div> 
+                    <div class="about-price">
+                        <div class="price">
+                            <p class="old-price">1000₽</p>
+                            <p class="new-price">800₽</p>
+                        </div>
+                        <button class="to-store">в магазин</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/shop-item-desk2.jpg" alt="Кукла Зайчик" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Кукла "Зайчик"</h3> 
+                    <div class="product-description">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена 
+                        <a href="#0" class="product-link"> весенняя серия постов</a>в блоге и несколько подкастов.
+                    </div> 
+                    <div class="about-price">
+                        <div class="price">
+                            <p class="new-price">3500₽</p>
+                        </div>
+                        <button class="to-store">
+                            <span class="visually-hidden">кнопка в магазин</span> в магазин</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/shop-item-desk3.jpg" alt="Шестиугольная рамка" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Шестиугольная рамка</h3> 
+                    <div class="product-description">Необычная рамка для украшения дома из видео 
+                        <a href="#0" class="product-link">"Как сделать рамку из подручных средств за 30 минут"</a>
+                    </div> 
+                    <div class="about-price">
+                        <div class="price">
+                            <p class="old-price">500₽</p>
+                            <p class="new-price">400₽</p>
+                        </div>
+                        <button class="to-store">в магазин</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </article>
       <footer class="footer">
         <div class="footer-wrapper">
           <address class="footer-address">

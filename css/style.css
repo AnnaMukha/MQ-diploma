@@ -372,6 +372,7 @@ body {
     padding: 0;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 
   }
 
@@ -1129,7 +1130,7 @@ body {
     }
 
     .product-container {
-        width: calc(50% - 34px);
+        width: calc(50% - 65px);
         margin-top: 28px;
         
 
@@ -1194,6 +1195,10 @@ body {
       line-height: 22px;
     }
 
+    .trend-info {
+      padding: 15px;
+    }
+
     .content {
         padding: 50px 35px;
     }
@@ -1235,7 +1240,7 @@ body {
     }
 
     .product-container {
-        width: calc(50% - 34px);
+        width: calc(50% - 64px);
         margin-top: 28px;
         
 
@@ -1456,12 +1461,16 @@ body {
   }
 
   .trend-container {
-    width: calc(50% - 4px);
+    width: calc(50% - 6px);
   }
 
   .trend-title {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .trend-info {
+    padding: 20px;
   }
 
   .content {

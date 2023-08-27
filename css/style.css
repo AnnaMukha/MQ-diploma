@@ -45,12 +45,17 @@ body {
   }
 
   ._hidden {
-    display: none;
+   display: none;
   }
 
   .popup-content {
     font-family: Open Sans;
     box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
     width: 390px;
     background-color: #fff;
     position: fixed;

@@ -1112,7 +1112,7 @@ body {
     }
 
     .content {
-        padding: 50px 35px 31px;
+        padding: 50px 35px 0;
     }
 
     .posts-list {
@@ -1146,7 +1146,7 @@ body {
     }
 
     .shop {
-      padding: 0 38px 33px;
+      padding: 37px 38px 33px;
     }
 
     .shop-title {
@@ -1155,6 +1155,7 @@ body {
 
     .product-description {
       max-width: 300px;
+      margin-bottom: 22px;
     }
 
     .post-title {
@@ -1304,7 +1305,7 @@ body {
     }
 
     .product-container {
-        width: calc(50% - 65px);
+        width: calc(50% - 35px);
         margin-top: 28px;
     }
 
@@ -1337,12 +1338,16 @@ body {
   }
 
   .header-container {
-    padding: 30px 15px 175px;
+    padding: 20px 15px 180px;
   }
   
   .header-logo {
     width: 100%;
-    padding: 200px 30px 0;
+    padding: 170px 30px 0;
+  }
+
+  .header-title {
+    margin: 32px 0;
   }
   
   .header-navigation{
@@ -1362,7 +1367,7 @@ body {
   }
 
   .header-title {
-    margin: 44px 0;
+    margin: 32px 0;
     width: 100%;
     font-size: 26px;
     line-height: 36px;
@@ -1373,20 +1378,29 @@ body {
   }
 
   .article-trends-title {
-    margin-top: 44px;
+    margin-top: 38px;
     margin-bottom: 24px;
     font-size: 16px;
+  }
+
+  .article-trends-title::after {
+    margin: 0 auto;
   }
 
   .trend-cards {
     display: flex;
     flex-direction: column;
-
+    gap: 2px;
   }
 
   .trend-container {
     width: 100%;
     min-height: 233px;
+    padding: 16px;
+  }
+
+  .trend-info {
+    padding: 26px 20px;
   }
 
   .trend-title {
@@ -1396,14 +1410,13 @@ body {
 
   .content {
     flex-direction: column;
-    padding: 44px 15px;
-
+    padding: 40px 15px 5px;
   }
 
   .article {
     flex-direction: column;
     border-bottom: solid 4px #eeeeee;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
 
   .post-image {
@@ -1412,16 +1425,25 @@ body {
 
   .post-info {
     width: 100%;
-    margin: 15px 0 0;
+    margin: 13px 0 0;
   }
 
   .post-title {
     font-size: 16px;
   }
 
+  .post-author {
+    margin-top: 17px;
+    margin-bottom: 15px;
+  }
+
   .post-text {
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 17px;
     font-size: 14px;
+  }
+  p {
+    margin: 0;
   }
 
 
@@ -1431,11 +1453,11 @@ body {
   }
 
   .section {
-    margin-bottom: 40px;
+    margin-bottom: 41px;
   }
 
   .sidebar-section-title {
-    font-size: 14px;
+    font-size: 17px;
   }
 
   .article-latest-posts {
@@ -1444,6 +1466,14 @@ body {
 
   .latest-posts-header {
     width: 100%
+  }
+
+  .form-search {
+    width: 100%;
+  }
+
+  .field-search {
+    width: 285px;
   }
 
   .subscribe-field {
@@ -1455,8 +1485,16 @@ body {
     padding: 15px 110px;
   }
 
+  .tags-list {
+    margin-top: 15px;
+  }
+
   .shop {
     padding: 0 36px 43px;
+  }
+
+  .shop-title::after {
+    margin-top: 8px;
   }
 
   .product-cards {
@@ -1469,6 +1507,20 @@ body {
     align-items: center;
   }
 
+  .product-title {
+    font-size: 17px;
+    line-height: 18px;
+    line-height: 33px;
+  }
+
+  .product-info {
+    padding: 18px 16px;
+    min-height: unset;
+  }
+
+  .copyright {
+    margin-top: 50px;
+  }
   }
 
   @media (max-width: 640px) and (orientation: landscape) {

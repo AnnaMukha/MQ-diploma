@@ -1059,15 +1059,20 @@ body {
 
     .header {
       background-image: url(../images/banner-bg-tablet.jpg);
-      padding-bottom: 90px;
+      padding: 40px 0 85px;
     }
 
     .header-container {
         padding: 0 35px;
     }
 
+    .header-logo {
+      width: 160px;
+    }
+
 
     .header-title {
+      max-width: 650px;
       font-size: 40px;
       line-height: 55px;
       text-transform: uppercase;
@@ -1075,7 +1080,7 @@ body {
       font-weight: 700;
       font-family: "Open Sans";
       text-align: center;
-      margin-top: 80px;
+      margin-top: 90px;
     
     }
 
@@ -1093,7 +1098,12 @@ body {
     }
   
     .trend-container {
-      width: calc(50% - 4px);
+      width: calc(50% - 2px);
+      min-width: 245px;
+    }
+
+    .trend-info {
+      padding: 28px 30px;
     }
 
     .trend-title {
@@ -1102,18 +1112,22 @@ body {
     }
 
     .content {
-        padding: 50px 35px;
+        padding: 50px 35px 31px;
     }
 
     .posts-list {
-        max-width: 55%;
+        max-width: 56%;
     }
 
     .article {
         flex-direction: column;
         width: 100%;
         border-bottom: solid 4px #eeeeee;
-        margin-bottom: 40px;
+        margin-bottom: 38px;
+    }
+
+    .date-author {
+      margin-top: 28px;
     }
 
     .post-image {
@@ -1122,7 +1136,7 @@ body {
 
     .post-info {
         width: 100%;
-        margin: 15px 0 0 0;
+        margin: 14px 0 0 0;
 
     }
 
@@ -1245,6 +1259,23 @@ body {
       margin-top: 35px;
     }
 
+    .product-info {
+      min-height: 240px;
+      padding: 16px 17px 0;
+    }
+
+    .shop {
+      padding: 0 38px 33px;
+    }
+
+    .shop-title {
+      font-size: 18px;
+    }
+
+    .product-description {
+      max-width: 300px;
+    }
+
     .product-cards {
         flex-wrap: wrap;
         margin-left: 18px;
@@ -1252,10 +1283,14 @@ body {
     }
 
     .product-container {
-        width: calc(50% - 64px);
+        width: calc(50% - 35px);
         margin-top: 28px;
-        
+    }
 
+    .product-title {
+      font-size: 17px;
+      line-height: 22px;
+      margin-top: 33px;
     }
 
     .footer-wrapper {

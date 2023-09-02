@@ -1140,6 +1140,23 @@ body {
 
     }
 
+    .product-info {
+      min-height: 240px;
+      padding: 16px 17px 0;
+    }
+
+    .shop {
+      padding: 0 38px 33px;
+    }
+
+    .shop-title {
+      font-size: 18px;
+    }
+
+    .product-description {
+      max-width: 300px;
+    }
+
     .post-title {
       font-size: 17px;
       line-height: 22px;
@@ -1156,10 +1173,14 @@ body {
     }
 
     .product-container {
-        width: calc(50% - 65px);
+        width: calc(50% - 35px);
         margin-top: 28px;
-        
+    }
 
+    .product-title {
+      font-size: 17px;
+      line-height: 22px;
+      margin-top: 33px;
     }
 
     .footer-wrapper {
@@ -1283,7 +1304,7 @@ body {
     }
 
     .product-container {
-        width: calc(50% - 35px);
+        width: calc(50% - 65px);
         margin-top: 28px;
     }
 
